@@ -1,5 +1,8 @@
 body {
   background-image: url("../images/background.jpg");
   background-repeat: repeat;
-  background-color: pink;
+}
+
+.logo {
+  border-radius: 50%;
 }
