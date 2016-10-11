@@ -5,4 +5,26 @@ body {
 
 .logo {
   border-radius: 50%;
+  float:left;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+main {
+  max-width: 40%;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
 }
