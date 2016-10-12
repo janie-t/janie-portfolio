@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Janie's Blog</title>
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+    <title>Janie Tito | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+    <link href="../style/main.css" rel="stylesheet">
   </head>
 
   <body>
-    <h1>Janie Tito</h1>
+    <div class="header">
+      <a href="../index.html"><img class="logo" src="../images/teacup-home.jpg" alt="teacup" width="100px" height="100px"></a>
+      <nav>
+        <ul>
 
-    <ul>
-      <li><a href="http://janie-t.github.io/index.html">Back to homepage</a></li>
-    </ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Blog</a>
+            <div class="dropdown-content">
+              <a href="c1-reflection-blog.html">The EDA way</a>
+              <a href="c1-time-and-habits-blog.html">Good habits</a>
+              <a href="t2-html-css-dom-p1.html">HTML etc. pt.1</a>
+              <a href="t2-html-css-dom-p2.html">HTML etc. pt.2</a>
+              <a href="c2-emotional-intelligence.html">Mindfulness</a>
+            <li><a class="active" href="../about.html">About</a></li>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-<p><b>HTML, CSS and the DOM: Part 1</b></p>
-
-
-<p>My kids were colouring in a blank poster today, with just the outlines of some animal pictures.  HTML is like that basic outline. It provides the content of text, images, video etc, but nothing else.  CSS is like the animals being coloured in different hues, and also given spots or stripes. CSS provides the styling such as colour and font.  The DOM is the structure of the poster. It is a way of interacting with the HTML and CSS and provides a familiar structure that helps us to find familiarity in every website.</p>
+    <div class="main">
+      <h1>HTML, CSS, the DOM - Part 1</h1>
+      <p>My kids were colouring in a blank poster today, with just the outlines of some animal pictures.  HTML is like that basic outline. It provides the content of text, images, video etc, but nothing else.  CSS is like the animals being coloured in different hues, and also given spots or stripes. CSS provides the styling such as colour and font.  The DOM is the structure of the poster. It is a way of interacting with the HTML and CSS and provides a familiar structure that helps us to find familiarity in every website. The DOM is also a way of interacting with, and editing the website, without using a text editor. There are developer tools provided in the browser and you can inspect specific elements to see their properties.</p>
 
 
  </body>
