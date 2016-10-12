@@ -6,25 +6,99 @@ body {
 .logo {
   border-radius: 50%;
   float:left;
+  background-color: #fff;
+  padding: .5em;
+}
+
+.header {
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(168, 231, 245, 0.5);
+    color: #ff33cc;
+    border-radius: 50%;
 }
 
 li {
-  list-style-type: none;
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #ff33cc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffccff;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ffccff}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
-main {
-  max-width: 40%;
-}
-
-h2 {
-  text-align: center;
+.main {
+  max-width: 60%;
+  background-color: rgba(255, 204, 255, 0.5);
+  border-radius: 20%;
+  padding: 1em;
+  margin:auto;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 p {
   text-align: center;
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 0.5em;
+  clear:both;
 }
