@@ -1,6 +1,31 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) {
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+}
+
 body {
   background-image: url("../images/background.jpg");
   background-repeat: repeat;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
 }
 
 .logo {
