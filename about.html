@@ -8,29 +8,39 @@
   <title>Janie Tito | About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+  <link href="style/main.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div id="header">
-    <img src="images/teacup1.gif" alt="teacup">
-    <h1>A little bit about me...</h1>
-  </div>
+  <div class="container">
+    <div class="header">
+      <a href="index.html"><img class="logo" src="images/teacup-home.jpg" alt="teacup" width="100px" height="100px"></a>
+      <nav>
+        <ul>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Blog</a>
+            <div class="dropdown-content">
+              <a href="blog/c1-reflection-blog.html">The EDA way</a>
+              <a href="blog/c1-time-and-habits-blog.html">Good habits</a>
+              <a href="blog/t2-html-css-dom-p1.html">HTML etc. pt.1</a>
+              <a href="blog/t2-html-css-dom-p2.html">HTML etc. pt.2</a>
+              <a href="blog/c2-emotional-intelligence.html">Mindfulness</a>
+            <li><a class="active" href="about.html">About</a></li>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  <div id="main">
+  <div class="main">
     <p>I live in Lower Hutt with my partner, two tamariki and our dog.  I like vintage and retro things especially pretty teacups. I enjoy taking photos. I am currently studying with Enspiral Dev Academy with the goal of becoming a web developer!  Come and visit my hobby photography page on facebook: <a href="https://www.facebook.com/dogsofpetone/" target="_blank">Dogs of Petone Beach.</a>
   </div>
 
-  <footer>Footer</footer>
+  <footer><p>&copy; 2016 Janie Tito.</p></footer>
 
 </body>
 </html>
