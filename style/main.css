@@ -6,8 +6,10 @@
 
 /* Small screens (default) */
 html { font-size: 100%; }
+
 @media (min-width: 20rem) {
   html { font-size: 80%;
+
   }
 }
 
@@ -29,7 +31,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
 }
 
@@ -40,19 +42,20 @@ body {
 .header {
   height: 100px;
   float: left;
+  margin: 0 .5em;
 }
 
-.header_logo {
+.header img {
   border-radius: 50%;
   background-color: #fff;
-  padding: .5em;
+  padding: .3em;
+  float: left;
 }
 
 /***Navigation links***/
 
 .nav {
-  display: flex;
-  justify-content: flex-end;
+  float: right;
 }
 
 ul {
@@ -108,7 +111,7 @@ li.dropdown {
 
 /*****MIDDLE PART OF PAGE*******/
 
-.column_main {
+.content .main {
   width: 50%;
   background-color: rgba(255, 204, 255, 0.5);
   border-radius: 20%;
@@ -117,9 +120,10 @@ li.dropdown {
   text-align: center;
 }
 
-.column_main a {
+.content .main a {
   text-decoration: none;
 }
+
 
 h1 {
   text-align: center;
@@ -141,7 +145,7 @@ p {
 
 /*******BOTTOM OF PAGE*********/
 
-.column_footer {
+.content .footer {
   text-align: center;
   font-family: "Times New Roman", serif;
   font-size: 0.8em;
