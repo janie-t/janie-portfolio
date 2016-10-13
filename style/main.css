@@ -30,23 +30,25 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 48rem;
-  width: 90%;
+  width: 100%;
 }
 
-/******TOP OF PAGE********/
+/*************TOP OF PAGE*************/
 
-.header_logo {
-  border-radius: 50%;
-  float:left;
-  background-color: #fff;
-  padding: .5em;
-}
+/***Teacup logo****/
 
 .header {
   height: 100px;
   float: left;
 }
+
+.header_logo {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: .5em;
+}
+
+/***Navigation links***/
 
 .nav {
   display: flex;
@@ -67,7 +69,7 @@ li {
     float: right;
 }
 
-li a, .nav_dropdown_dropbtn {
+li a, .dropbtn {
     display: inline-block;
     color: #ff33cc;
     text-align: center;
@@ -75,11 +77,11 @@ li a, .nav_dropdown_dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .nav_dropdown:hover .nav_dropdown_dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
     background-color: #ffccff;
 }
 
-li.nav_dropdown {
+li.dropdown {
     display: inline-block;
 }
 
@@ -87,7 +89,6 @@ li.nav_dropdown {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
