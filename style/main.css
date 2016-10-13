@@ -6,6 +6,10 @@
 
 /* Small screens (default) */
 html { font-size: 100%; }
+@media (min-width: 20rem) {
+  html { font-size: 80%;
+  }
+}
 
 /* Medium screens (640px) */
 @media (min-width: 40rem) {
@@ -16,6 +20,8 @@ html { font-size: 100%; }
 @media (min-width: 64rem) {
   html { font-size: 120%; }
 }
+
+/*****MAIN PAGE INFO******/
 
 body {
   background-image: url("../images/background.jpg");
@@ -28,7 +34,9 @@ body {
   width: 90%;
 }
 
-.logo {
+/******TOP OF PAGE********/
+
+.header_logo {
   border-radius: 50%;
   float:left;
   background-color: #fff;
@@ -37,9 +45,10 @@ body {
 
 .header {
   height: 100px;
+  float: left;
 }
 
-nav {
+.nav {
   display: flex;
   justify-content: flex-end;
 }
@@ -58,7 +67,7 @@ li {
     float: right;
 }
 
-li a, .dropbtn {
+li a, .nav_dropdown_dropbtn {
     display: inline-block;
     color: #ff33cc;
     text-align: center;
@@ -66,11 +75,11 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .nav_dropdown:hover .nav_dropdown_dropbtn {
     background-color: #ffccff;
 }
 
-li.dropdown {
+li.nav_dropdown {
     display: inline-block;
 }
 
@@ -96,8 +105,9 @@ li.dropdown {
     display: block;
 }
 
+/*****MIDDLE PART OF PAGE*******/
 
-.main {
+.column_main {
   max-width: 60%;
   background-color: rgba(255, 204, 255, 0.5);
   border-radius: 20%;
@@ -105,7 +115,7 @@ li.dropdown {
   margin:auto;
 }
 
-.main a {
+.column_main a {
   text-decoration: none;
 }
 
@@ -125,7 +135,10 @@ p {
   font-size: 1em;
 }
 
-footer {
+
+/*******BOTTOM OF PAGE*********/
+
+.column_footer {
   text-align: center;
   font-family: "Times New Roman", serif;
   font-size: 0.8em;
