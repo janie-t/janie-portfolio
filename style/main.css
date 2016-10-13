@@ -109,11 +109,12 @@ li.dropdown {
 /*****MIDDLE PART OF PAGE*******/
 
 .column_main {
-  max-width: 60%;
+  width: 50%;
   background-color: rgba(255, 204, 255, 0.5);
   border-radius: 20%;
-  padding: 1em;
-  margin:auto;
+  padding: 40px 20px;
+  margin: 40px auto;
+  text-align: center;
 }
 
 .column_main a {
