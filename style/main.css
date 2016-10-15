@@ -12,7 +12,8 @@ body {
 }
 
 .container {
-	margin-top: 50px;
+	margin-top: 40px;
+  text-align: center;
 }
 
 h1 {
@@ -47,6 +48,7 @@ p {
 	margin: 13px 0 0 0;
   padding-top: 15px;
   text-align: center;
+  font-size: 1.2em;
 }
 
 #nav ul li {
@@ -76,7 +78,7 @@ p {
 /*****MIDDLE PART OF PAGE*******/
 
 #welcome {
-  background-color: rgba(255, 204, 255, 0.5);
+
   border-radius: 20%;
   text-align: center;
   padding-top:10px;
@@ -91,5 +93,17 @@ p {
   margin: 15px 0 0;
 }
 
+#article {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: justify;
+  background-color: rgba(195, 192, 236, 0.5);
+  text-align: center;
+}
 
-/*******MEDIA QUERIES*******/
+#article img {
+	margin-bottom: 15px;
+	max-width: 100%;
+	height: auto;
+  text-align: center;
+}
