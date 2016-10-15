@@ -33,7 +33,9 @@ p {
   font-family: 'Arimo', sans-serif;
 }
 
-
+a {
+	text-decoration: none;
+	}
 
 /*************TOP OF PAGE*************/
 
