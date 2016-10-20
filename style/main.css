@@ -122,7 +122,7 @@ p {
   text-align: justify;
   background-color: rgba(195, 192, 236, 0.5);
   text-align: center;
-  font-size: 100%;
+  font-size: .5em;
 }
 
 .article img {
@@ -130,4 +130,10 @@ p {
 	max-width: 100%;
 	height: auto;
   text-align: center;
+}
+
+@media (min-width:550px) {
+.article {
+    font-size: .8em;
+  }
 }
