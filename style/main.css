@@ -55,6 +55,7 @@ figure {
   padding-top: 15px;
   text-align: center;
   font-size: 1.7rem;
+  font-weight: bold;
 }
 
 @media (min-width:550px) {
