@@ -24,12 +24,12 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 p {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.8em;
   font-family: 'Arimo', sans-serif;
 }
 
@@ -39,6 +39,15 @@ a {
 
 figure {
   font-size: 0.8em;
+}
+
+@media (min-width:550px) {
+h2 {
+    font-size: 1.6em;
+  }
+p {
+  font-size: 1.5em;
+}
 }
 
 /*************TOP OF PAGE*************/
@@ -61,6 +70,7 @@ figure {
 @media (min-width:550px) {
   .nav {
     font-size: 1.8rem;
+    font-weight: normal;
   }
 }
 
