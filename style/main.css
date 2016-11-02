@@ -41,6 +41,15 @@ figure {
   font-size: 0.8em;
 }
 
+li {
+  font-size: 1.4em;
+  width: 70%;
+  text-align: left;
+  list-style-type: disc;
+  margin-left: 3em;
+
+}
+
 @media (min-width:550px) {
 h2 {
     font-size: 1.6em;
