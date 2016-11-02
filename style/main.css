@@ -19,12 +19,13 @@ body {
 h1 {
   text-align: center;
   font-family: 'Lobster', cursive;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h2 {
   text-align: center;
-  font-size: 2em;
+  font-family: 'Lobster', cursive;
+  font-size: 2.8em;
 }
 
 p {
@@ -38,7 +39,7 @@ a {
 	}
 
 figure {
-  font-size: 0.8em;
+  font-size: 1.5em;
 }
 
 li {
@@ -52,10 +53,13 @@ li {
 
 @media (min-width:550px) {
 h2 {
-    font-size: 1.6em;
+    font-size: 2em;
   }
 p {
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+figure {
+  font-size: 1.2em;
 }
 }
 
