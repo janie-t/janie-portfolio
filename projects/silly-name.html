@@ -22,8 +22,8 @@
 
     <div class="row">
       <div class="twelve columns welcome">
-        <h3>Get yourself a silly new name!</h3>
-        <h5>Based on the book "Captain Underpants and the Perilous Plot of Professor Poopypants" by Dave Pilkey.</h5>
+        <h4>Get yourself a silly new name!</h4>
+        <h6>Based on the book "Captain Underpants and the Perilous Plot of Professor Poopypants" by Dave Pilkey.</h6>
         <p>Enter the information required below to receive a fabulously funny new name.</p>
       </div>
       <div class="twelve columns letters">
@@ -34,15 +34,14 @@
           <input type="text" name="firstletterlastname" />
           <label>What is the last letter of your LAST name?</label>
           <input type="text" name="lastletterlastname" />
-
-
-
-
+          </br>
+          <input type="button" value="Submit your letters!" onClick = "makeSillyName()" />
         </form>
-
-
       </div>
-
+      <div class="twelve columns name">
+        <h5>Your new name is:</h5>
+        <p class="newName"></p>
+      </div>
 
 
     </div>
