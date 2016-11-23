@@ -9,10 +9,10 @@
   <meta name="Janie Tito" content="">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
-  <link rel="icon" href="../../favicon.ico">
+  <link rel="icon" href="../images/favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-  <link rel="icon" type="image/png" href="images/favicon.ico">
-  <link href="style/silly.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+  <link href="../style/silly.css" rel="stylesheet">
   <title>Silly Name Generator</title>
 </head>
 
@@ -27,17 +27,20 @@
         <p>Enter the information required below to receive a fabulously funny new name.</p>
       </div>
       <div class="twelve columns letters">
-        <form>
+        <form name="newNameForm">
           <label>What is the first letter of your FIRST name?</label>
-          <input type="text" name="firstname" />
+          <input type="text" name="firstLetter" />
           <label>What is the first letter of your LAST name?</label>
-          <input type="text" name="firstletterlastname" />
+          <input type="text" name="secondLetter" />
           <label>What is the last letter of your LAST name?</label>
-          <input type="text" name="lastletterlastname" />
+          <input type="text" name="thirdLetter" />
           </br>
-          <input type="button" value="Submit your letters!" onClick = "makeSillyName()" />
+          <input type="button" value="Submit your letters!" onClick = "newNameProcess()" />
         </form>
       </div>
+
+      <div id="nameLetters"></div>
+
       <div class="twelve columns name">
         <h5>Your new name is:</h5>
         <p class="newName"></p>
@@ -56,7 +59,7 @@
 
 
 
-<script src="ranscript.js"></script>
+<script src="silly.js"></script>
 
 </body>
 </html>
