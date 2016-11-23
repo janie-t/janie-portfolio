@@ -24,9 +24,10 @@
       <div class="twelve columns welcome">
         <h4>Get yourself a silly new name!</h4>
         <h6>Based on the book "Captain Underpants and the Perilous Plot of Professor Poopypants" by Dave Pilkey.</h6>
-        <p>Enter the information required below to receive a fabulously funny new name.</p>
+        <p>Enter the information in the form below to receive a new name.</p>
       </div>
-      <div class="twelve columns letters">
+
+      <div class="twelve columns userLetters">
         <form name="newNameForm">
           <label>What is the first letter of your FIRST name?</label>
           <input type="text" name="firstLetter" />
@@ -37,9 +38,12 @@
           </br>
           <input type="button" value="Submit your letters!" onClick = "newNameProcess()" />
         </form>
+
       </div>
 
-      <div id="nameLetters"></div>
+      <div id="letters"> </div>
+
+
 
       <div class="twelve columns name">
         <h5>Your new name is:</h5>
