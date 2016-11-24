@@ -11,11 +11,10 @@ window.addEventListener("DOMContentLoaded", function() {
     var nameLetters = '<div>Using these letters?: ' + " " + firstLetter + ", " + secondLetter + ", " + thirdLetter  + '</div>';
     document.getElementById("letters").innerHTML = nameLetters;
     document.getElementById('yes').style.visibility='visible';
-    document.getElementById('name').style.visibility='visible';
+
   }
 
-//next, compare the letters to a list of names. Do letter one first.
-//once finished, will come back and add a function to check if the input data is a letter or if not it will ask the user to try again with a letter between a and z
+//When 'yes' button is clicked, then start the comparison of letters to names. Start with first letter of First name.
   function useLetters (){
 
   }
