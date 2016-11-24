@@ -1,6 +1,8 @@
 window.addEventListener("DOMContentLoaded", function() {
 
   document.getElementById('yes').style.visibility='hidden';
+  document.getElementById('name').style.visibility='hidden';
+
 
 //first, print the letters that have been entered on the screen
   function newNameProcess (){
