@@ -1,8 +1,7 @@
 window.addEventListener("DOMContentLoaded", function() {
-
   document.getElementById('yes').style.visibility='hidden';
   document.getElementById('name').style.visibility='hidden';
-
+}, false);
 
 //first, print the letters that have been entered on the screen
   function newNameProcess (){
@@ -11,6 +10,8 @@ window.addEventListener("DOMContentLoaded", function() {
     var thirdLetter = document.newNameForm.thirdLetter.value;
     var nameLetters = '<div>Using these letters?: ' + " " + firstLetter + ", " + secondLetter + ", " + thirdLetter  + '</div>';
     document.getElementById("letters").innerHTML = nameLetters;
+    document.getElementById('yes').style.visibility='visible';
+    document.getElementById('name').style.visibility='visible';
   }
 
 //next, compare the letters to a list of names. Do letter one first.
@@ -18,5 +19,3 @@ window.addEventListener("DOMContentLoaded", function() {
   function useLetters (){
 
   }
-
-}, false);
