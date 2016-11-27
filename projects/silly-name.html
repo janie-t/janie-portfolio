@@ -31,11 +31,11 @@
       <div class="twelve columns userLetters">
         <form name="newNameForm">
           <label>What is the first letter of your FIRST name?</label>
-          <input type="text" name="firstLetter" />
+          <input type="text" name="first" />
           <label>What is the first letter of your LAST name?</label>
-          <input type="text" name="secondLetter" />
+          <input type="text" name="second" />
           <label>What is the last letter of your LAST name?</label>
-          <input type="text" name="thirdLetter" />
+          <input type="text" name="third" />
           </br>
           <input type="button" value="Submit your letters!" onClick = "newNameProcess()" />
         </form>
@@ -47,24 +47,15 @@
       <button class="two columns"  onclick="useLetters()" id="yes">Yes!</button>
 
       <div class="twelve columns" id="name">
-        <h5>Your new name is:</h5>
-        <p class="newName"></p>
+        <h5>Your new name is:</h5><p id="newName"></p>
       </div>
 
 
     </div>
 
-
-
-
-
-
-
   </div><!--End Container-->
 
-
-
-<script src="silly.js"></script>
+  <script src="silly.js"></script>
 
 </body>
 </html>
