@@ -22,6 +22,7 @@ window.addEventListener("DOMContentLoaded", function() {
     var firstLetter = document.newNameForm.first.value;
     var secondLetter = document.newNameForm.second.value;
     var thirdLetter = document.newNameForm.third.value;
+
     var firstName;
 
     switch (firstLetter) {
@@ -106,5 +107,99 @@ window.addEventListener("DOMContentLoaded", function() {
       default:
         alert ("Please enter a lowercase letter");
     }
-    document.getElementById('newName').innerHTML=firstName;
+    document.getElementById('newName').innerHTML=firstName + " ";
+
+
+    var secondName;
+
+    switch (secondLetter) {
+      case "a":
+        secondName="Diaper";
+        break;
+      case "b":
+        secondName="Toilet";
+        break;
+      case "c":
+        secondName="Giggle";
+        break;
+      case "d":
+        secondName="Bubble";
+        break;
+      case "e":
+        secondName="Girdle";
+        break;
+      case "f":
+        secondName="Barf";
+        break;
+      case "g":
+        secondName="Lizard";
+        break;
+      case "h":
+        secondName="Cheeseball";
+        break;
+      case "i":
+        secondName="Waffle";
+        break;
+      case "j":
+        secondName="Monkey";
+        break;
+      case "k":
+        secondName="Potty";
+        break;
+      case "l":
+        secondName="Liver";
+        break;
+      case "m":
+        secondName="Banana";
+        break;
+      case "n":
+        secondName="Rhino";
+        break;
+      case "o":
+        secondName="Burger";
+        break;
+      case "p":
+        secondName="Hamster";
+        break;
+      case "q":
+        secondName="Toad";
+        break;
+      case "r":
+        secondName="Gizzard";
+        break;
+      case "s":
+        secondName="Pizza";
+        break;
+      case "t":
+        secondName="Gerbil";
+        break;
+      case "u":
+        secondName="Chicken";
+        break;
+      case "v":
+        secondName="Pickle";
+        break;
+      case "w":
+        secondName="Chuckle";
+        break;
+      case "x":
+        secondName="Tofu";
+        break;
+      case "y":
+        secondName="Gorilla";
+        break;
+      case "z":
+        secondName="Stinker";
+        break;
+      default:
+        alert ("Please enter a lowercase letter");
+    }
+    document.getElementById('newName').innerHTML+=secondName;
+
+
+
+
+
+
+
   }
