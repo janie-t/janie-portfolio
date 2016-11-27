@@ -5,3 +5,7 @@ form {
 body {
   text-align: center;
 }
+
+#name {
+  background-color: yellow;
+}
