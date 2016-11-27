@@ -196,7 +196,91 @@ window.addEventListener("DOMContentLoaded", function() {
     }
     document.getElementById('newName').innerHTML+=secondName;
 
+    var thirdName;
 
+    switch (thirdLetter) {
+      case "a":
+        thirdName="head";
+        break;
+      case "b":
+        thirdName="mouth";
+        break;
+      case "c":
+        thirdName="face";
+        break;
+      case "d":
+        thirdName="nose";
+        break;
+      case "e":
+        thirdName="tush";
+        break;
+      case "f":
+        thirdName="breath";
+        break;
+      case "g":
+        thirdName="pants";
+        break;
+      case "h":
+        thirdName="shorts";
+        break;
+      case "i":
+        thirdName="lips";
+        break;
+      case "j":
+        thirdName="honker";
+        break;
+      case "k":
+        thirdName="butt";
+        break;
+      case "l":
+        thirdName="brain";
+        break;
+      case "m":
+        thirdName="tushie";
+        break;
+      case "n":
+        thirdName="chunks";
+        break;
+      case "o":
+        thirdName="hiney";
+        break;
+      case "p":
+        thirdName="bisuits";
+        break;
+      case "q":
+        thirdName="toes";
+        break;
+      case "r":
+        thirdName="buns";
+        break;
+      case "s":
+        thirdName="fanny";
+        break;
+      case "t":
+        thirdName="sniffer";
+        break;
+      case "u":
+        thirdName="sprinkles";
+        break;
+      case "v":
+        thirdName="kisser";
+        break;
+      case "w":
+        thirdName="squirt";
+        break;
+      case "x":
+        thirdName="humperdinck";
+        break;
+      case "y":
+        thirdName="brains";
+        break;
+      case "z":
+        thirdName="juice";
+        break;
+      default:
+        alert ("Please enter a lowercase letter");
+    }
+    document.getElementById('newName').innerHTML+=thirdName;
 
 
 
