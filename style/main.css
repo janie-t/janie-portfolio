@@ -166,13 +166,8 @@ figure {
   -webkit-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   -moz-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
-  width: 30%;
   height: 100px;
-  float: center;
   text-align: center;
   margin: 10px;
   background-color: pink;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
