@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-	margin-top: 40px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -35,8 +35,8 @@ p {
 }
 
 a {
-	text-decoration: none;
-	}
+  text-decoration: none;
+}
 
 figure {
   font-size: 1.5em;
@@ -73,7 +73,7 @@ figure {
 
 
 .nav {
-	margin: 15px 0 0 0;
+  margin: 15px 0 0 0;
   padding-top: 15px;
   text-align: center;
   font-size: 1.0rem;
@@ -88,9 +88,9 @@ figure {
 }
 
 .nav ul li {
-	display: inline;
-	margin: 0 20px 0 0;
-	margin-bottom: 10px;
+  display: inline;
+  margin: 0 20px 0 0;
+  margin-bottom: 10px;
   background-color: rgba(195, 192, 236, 0.5);
   border-radius: 10%;
 }
@@ -106,9 +106,9 @@ figure {
 /******HEADER IMAGE**************/
 
 .headerImage {
-	margin-bottom: 10px;
-	max-width: 100%;
-	height: auto;
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
   text-align: center;
   border-radius: 20%;
 }
@@ -116,7 +116,6 @@ figure {
 /*****MIDDLE PART OF PAGE*******/
 
 .welcome {
-
   border-radius: 20%;
   text-align: center;
   padding-top:10px;
@@ -144,12 +143,15 @@ figure {
   background-color: rgba(195, 192, 236, 0.5);
   text-align: center;
   font-size: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .article img {
-	margin-bottom: 15px;
-	max-width: 100%;
-	height: auto;
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
   text-align: center;
 }
 
