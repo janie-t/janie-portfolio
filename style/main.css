@@ -166,7 +166,7 @@ figure {
   -webkit-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   -moz-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
-  width: 20%;
+  width: auto;
   height: 100px;
   float: left;
   text-align: center;
@@ -174,4 +174,5 @@ figure {
   background-color: pink;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
