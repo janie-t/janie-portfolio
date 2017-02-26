@@ -19,13 +19,13 @@ body {
 h1 {
   text-align: center;
   font-family: 'Lobster', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h2 {
   text-align: center;
-  font-family: 'Lobster', cursive;
-  font-size: 2.8em;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.5em;
 }
 
 p {
@@ -118,8 +118,9 @@ figure {
 .welcome {
   border-radius: 20%;
   text-align: center;
-  padding-top:10px;
-  padding-bottom: 10px;
+  padding-top:5px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .welcome a {
@@ -137,15 +138,13 @@ figure {
 }
 
 .article {
+  width: auto;
+  float: none;
   margin-top: 10px;
-  padding: 10px;
   text-align: justify;
   background-color: rgba(195, 192, 236, 0.5);
   text-align: center;
   font-size: .5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .article img {
@@ -166,12 +165,14 @@ figure {
   -webkit-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   -moz-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
-  height: 100px;
-  margin: 10px;
+  margin-top: 10px;
+  padding: 5px;
   background-color: pink;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
 }
