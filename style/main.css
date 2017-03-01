@@ -75,7 +75,8 @@ figure {
 
 
 .nav {
-  padding: 1em 1em 0 1em;
+  padding-left: .5em;
+  padding-top: .5em;
   text-align: center;
   font-size: 1.0rem;
   font-weight: bold;
