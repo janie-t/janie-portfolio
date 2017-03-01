@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-	margin-top: 40px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -24,8 +24,8 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: 'Lobster', cursive;
-  font-size: 2.8em;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.5em;
 }
 
 p {
@@ -35,8 +35,8 @@ p {
 }
 
 a {
-	text-decoration: none;
-	}
+  text-decoration: none;
+}
 
 figure {
   font-size: 1.5em;
@@ -73,7 +73,7 @@ figure {
 
 
 .nav {
-	margin: 15px 0 0 0;
+  margin: 15px 0 0 0;
   padding-top: 15px;
   text-align: center;
   font-size: 1.0rem;
@@ -88,9 +88,9 @@ figure {
 }
 
 .nav ul li {
-	display: inline;
-	margin: 0 20px 0 0;
-	margin-bottom: 10px;
+  display: inline;
+  margin: 0 20px 0 0;
+  margin-bottom: 10px;
   background-color: rgba(195, 192, 236, 0.5);
   border-radius: 10%;
 }
@@ -106,9 +106,9 @@ figure {
 /******HEADER IMAGE**************/
 
 .headerImage {
-	margin-bottom: 10px;
-	max-width: 100%;
-	height: auto;
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
   text-align: center;
   border-radius: 20%;
 }
@@ -116,11 +116,11 @@ figure {
 /*****MIDDLE PART OF PAGE*******/
 
 .welcome {
-
   border-radius: 20%;
   text-align: center;
-  padding-top:10px;
-  padding-bottom: 10px;
+  padding-top:5px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .welcome a {
@@ -138,8 +138,9 @@ figure {
 }
 
 .article {
+  width: auto;
+  float: none;
   margin-top: 10px;
-  padding: 10px;
   text-align: justify;
   background-color: rgba(195, 192, 236, 0.5);
   text-align: center;
@@ -147,9 +148,9 @@ figure {
 }
 
 .article img {
-	margin-bottom: 15px;
-	max-width: 100%;
-	height: auto;
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
   text-align: center;
 }
 
@@ -164,15 +165,13 @@ figure {
   -webkit-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   -moz-box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
   box-shadow: 3px 2px 28px -2px rgba(0,0,0,1);
-  width: 20%;
-  height: 100px;
-  float: left;
-  text-align: center;
-  margin: 10px;
+  margin-top: 10px;
+  padding: 5px;
   background-color: pink;
+  width: 200px;
   display: flex;
-  justify-content: center;
   align-items: center;
-
-
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
