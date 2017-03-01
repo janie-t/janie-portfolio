@@ -85,6 +85,10 @@ figure {
   margin-top: 1.5em;
 }
 
+.blog_nav {
+  font-size: 1.2em;
+}
+
 @media (min-width:550px) {
   .nav {
     font-size: 1.4rem;
