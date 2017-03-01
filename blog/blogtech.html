@@ -28,11 +28,11 @@
       </div>
       <div class="ten columns nav">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="blog.html">Personal Development</a></li>
-          <li><a href="../contact.html">Contact</a></li>
+          <li class="links"><a href="../index.html">Home</a></li>
+          <li class="links"><a href="../about.html">About</a></li>
+          <li class="links"><a href="projects.html">Projects</a></li>
+          <li class="links"><a href="blog.html">Personal Development</a></li>
+          <li class="links"><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -69,7 +69,7 @@
         <a name="one"></a>
     	  <h2>HTML, CSS, the DOM - Part 1</h2>
     	  <p>What is HTML/CSS/the DOM? An analogy: My kids were colouring in a blank poster today, with just the outlines of some animal pictures.  HTML is like that basic outline. It provides the content of text, images, video etc, but nothing else.  CSS is like the animals being coloured in different hues, and also given spots or stripes. CSS provides the styling such as colour and font.  The DOM is the structure of the poster. It is a way of interacting with the HTML and CSS and provides a familiar structure that helps us to find familiarity in every website. The DOM is also a way of interacting with, and editing the website, without using a text editor. There are developer tools provided in the browser and you can inspect specific elements to see their properties.</p>
-        <a href="#top">TOP</a>
+        <a href="#top" class="top">TOP</a>
       </div>
 
       <div class="twelve columns article">
@@ -78,7 +78,7 @@
         <p>Grid based design is where the html layout is structured using rows and columns.  The common number of columns is 12 to allow for a range of layout designs. This is a flexible way of allowing different layouts while staying with the boxify concept.</p>
         <p>Responsive web design is a big deal these days because there are so many different kinds of devices being used.  From large screen desktops, to small mobile phones - the same website needs to be able to be usable and readable on every device in the world! So being responsive is kinda important!</p>
         <p>Semantic structure is when we start looking at the hierarchy of elements such as text on a page. Good practice is giving larger headings at the top of a page, an h1 tag, and this tells the browser that the heading is important and will be semantically placed at the top.  Then h2 under that, and h3 under that, etc.</p>
-        <a href="#top">TOP</a>
+        <a href="#top" class="top">TOP</a>
       </div>
 
       <div class="twelve columns article">
@@ -88,7 +88,7 @@
         <p>Mobile first design is where the layout is determined based on the dimensions of a mobile phone initially, and then changed to fit desktop browsers later on.  If you do desktop design first, its more likely to be a website that needs a bit of computer processing power and if opened on a phone, may be clunky and slow, or not work at all.  If the design is mobile-first, then its likely to work well on phones, and also desktops.</p>
         <p>Frameworks are like libraries. They have a bundle of code that you can borrow (forever), so that web developers don't need to keep reinventing the wheel.  Some pros are that it saves time and you can design a website that is industry standard and works well for most users and browsers. The cons are that they can be complicated, and take up more processing power to utilise than a simple website. You also have to stick to the framework semantics which you may not be used to.</p>
         <p>A wireframe is a sketch or outline of what the proposed website design will look like. It is usually just boxes or frames for where the content will go - no writing or pictures or colours yet.  It is used to get an idea of the balance on the screen mainly, and to see if elements fit on the page nicely.</p>
-        <a href="#top">TOP</a>
+        <a href="#top" class="top">TOP</a>
       </div>
 
       <div class="twelve columns article">
@@ -111,7 +111,7 @@
           <img src="../images/wireframe-blog-page-desktop.jpg" alt="wireframe">
           <figcaption>Blog page - desktop version</figcaption>
         </figure>
-        <a href="#top">TOP</a>
+        <a href="#top" class="top">TOP</a>
       </div>
 
       <div class="twelve columns article">
@@ -121,7 +121,7 @@
         <p>Control flow and loops is the way in which JS sets out instructions or steps.  It is in order. For example, making a cup of tea. You could first turn on the jug. Then you have to keep checking if the jug is boiled (loop) until the right condition is met, which is hot water. At which point, and not before, you could then pour water into your mug.</p>
         <p>Data in arrays is accessed by calling the data's place in the list, ie. [0], [1], [2] etc. A piece of data in objects however, needs to be found with its unique name ie. {name: "Bob"}.</p>
         <p>Functions are a bunch of instructions put together in a tidy wee box and given a name. We can then use the function name later on, and avoid having to type out the same instructions over and over. Its a time saver.</p>
-        <a href="#top">TOP</a>
+        <a href="#top" class="top">TOP</a>
        </div>
 
       <div class="twelve columns article">
@@ -143,7 +143,7 @@
         <p><b><i>.filter()</i></b> is a method that also creates a new array after applying a function to an existing array. In the new array it only includes elements from the first array that return 'true' to the function. For example an array of names ['Bob', 'Sarah', 'John', 'Sue'] has a function applied to it that finds people born before a certain date. The .filter() will create a second array like ['Bob', 'Sue'] because they were born before the specified date in the function. Once again, the first array stays unchanged.</p>
         <p><b><i>.reduce()</i></b> is a method that will apply a function to an array and return a summarised version of the array. There are four parameters, previousValue, currentValue, currentIndex and array. Depending on what those parameters are, will determine how the initial array is summarised. Numbers can be added together. Strings can be collated into one sentence. For example an array with substrings such as [[1,2],[3,4],[5,6]], using .reduce() with appropriate parameters, can return [1,2,3,4,5,6].  Alternatively an array of [1,2,3,4,5] can be reduced using a Sum function and return [15]. A variable with several elements of say; word: "This", nextword: "has", thirdWord: "been", lastWord: "reduced" could return a reduced array of ['This', 'has', 'been', 'reduced'] </p>
         <p>PHEW! If you made it this far, Thank You for your time!!</p>
-        <a href="#top">TOP</a>
+        <a href="#top" class="top">TOP</a>
       </div>
 
       <div class="twelve columns article">
@@ -180,7 +180,7 @@
           <li>Use "This is a 'String'" instead</li>
           <li>Comes down to preference, but whichever you prefer, stick with it and be consistent.</li>
         </ul>
-        <a href="#top">TOP</a>
+        <a href="#top" class="top">TOP</a>
         </div>
 
         <div class="twelve columns article">
@@ -189,7 +189,7 @@
           <img src="../images/scope.gif" />
           <p>Scope refers to the way that variables and functions relate to each other in a programme. Variables can be outside of a function, or inside. Depending on where they are in relation to each other, will affect whether or not they can be 'seen'. For example, a variable created on its own, is a Global variable. It can be seen or used by any other variable or function in the programme. However, a variable can also be created inside a function, and then it becomes a Local variable. It can only be seen or used inside that function, or by another sub-function. Basically the scope is the area within which you have access to variables.</p>
 
-          <a href="#top">TOP</a>
+          <a href="#top" class="top">TOP</a>
           </div>
 
   </div><!--End Container-->
