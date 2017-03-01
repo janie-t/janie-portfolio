@@ -19,7 +19,7 @@ body {
 h1 {
   text-align: center;
   font-family: 'Lobster', cursive;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 h2 {
@@ -43,7 +43,7 @@ figure {
 }
 
 li {
-  font-size: 1.4em;
+  font-size: 2em;
   width: 70%;
   text-align: left;
   list-style-type: disc;
@@ -173,6 +173,6 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 
 }
