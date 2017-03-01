@@ -86,7 +86,7 @@ figure {
 }
 
 .blog_nav {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 @media (min-width:550px) {
@@ -153,11 +153,22 @@ figure {
   font-size: .8em;
 }
 
+.article h2 {
+  font-size: 2em;
+  font-style: italic;
+}
+
 .article img {
-  margin-bottom: 15px;
   max-width: 100%;
   height: auto;
   text-align: center;
+  margin-left: 25%;
+}
+
+.article .top {
+  text-align: center;
+  margin-left: 45%;
+  font-size: 1.3em;
 }
 
 @media (min-width:550px) {
