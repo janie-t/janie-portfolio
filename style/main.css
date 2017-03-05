@@ -56,7 +56,8 @@ li {
   text-align: left;
   list-style-type: disc;
   margin-left: 3em;
-  border-right: solid #b4ecd0 3px;
+  border-right: solid 3px;
+  border-color: #b4ecd0;
   padding-right: 1em;
 }
 
