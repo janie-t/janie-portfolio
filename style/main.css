@@ -201,6 +201,18 @@ figure {
   border-radius: 10%;
 }
 
+.box {
+  font-size: .8em;
+}
+
+@media (min-width:550px) {
+.box {
+    font-size: 1.3em;
+  }
+}
+
+
+/***Contact Page***/
 .LI-profile-badge {
  margin:auto;
  text-align: center;
