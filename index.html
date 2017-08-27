@@ -1,62 +1,431 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="Janie Tito | Portfolio" content="">
-  <meta name="Janie Tito" content="">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
-  <link rel="icon" href="../../favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link rel="icon" type="image/png" href="images/favicon.ico">
-  <link href="style/main.css" rel="stylesheet">
-  <title>Janie Tito | Kete</title>
+<meta charset="UTF-8">
+<title>Janie Tito | Web Developer</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta name="description" content="Personal portfolio/kete of Janie Tito">
+<meta name="keywords" content="janie tito, web, website, websites, web design, app design, app, react, redux, javascript, freelance, responsive, mobile, mobile design, development, responsive development, web development, unique, fun, developer, affordable, small business, personal, portfolio">
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/animations.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/colorbox.css" />
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+
+<!--[if IE]>
+<style type="text/css">
+	.bannerTextSmall {
+    	margin-top:25px;
+    }
+</style>
+<![endif]-->
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Goudy+Bookletter+1911::latin', 'Raleway:400,300,500,700:latin', 'Open+Sans:400italic,400:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--[if lte IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+<![endif]-->
+
+<script src="js/jquery.colorbox.js"></script>
+<script>
+	$(document).ready(function(){
+	$(".inline").colorbox({inline:true, width:"53%"});
+	});
+</script>
+<script type="text/javascript" src="js/javascript.js"> </script>
+<script type="text/javascript" src="js/javascript2.js"> </script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30836227-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+// change this to false if you're having trouble with WOFFs
+//var woffEnabled = true;
+// uncomment this and set it to the path where your webfont directory is
+//var customPath = "/themes/";
+</script>
+<script type="text/javascript" src="MyFontsWebfontsKit.js"></script>
+
+<script>
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 2;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+
+    lastScrollTop = st;
+}
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#designIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#developmentIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn2");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#newsletterIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn3");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#socialIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn4");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#twitterIcon').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script src="js/raphael-min.js"></script>
+<script src="jquery.lazylinepainter-1.4.1.min.js"></script>
+
+        <!-- <script type="text/javascript">
+			(function( $ ){
+
+				/*
+				* Lazy Line Painter 1.4
+				* SVG Stroke animation.
+				*
+				* https://github.com/camoconnell/lazy-line-painter
+				*
+				* Copyright 2013
+				* Cam O'Connell - http://www.camoconnell.com  http://www.behance.net/camoconnell
+				* Released under the MIT license
+				*
+				*/
+
+
+				// Define object containing your Raphael path data.
+				// goto http://lazylinepainter.info to convert your svg into a svgData object.
+				var svgData = {
+				}
+
+				$(document).ready(function(){
+
+					// Setup your Lazy Line element.
+					// see README file for more settings
+					$('#demo').lazylinepainter({
+							'svgData' : svgData,
+							'strokeWidth':2,
+							'strokeColor':'#ffffff',
+							'onComplete' : function(){
+								$(this).animate({'opacity':0},800);
+								}
+						}
+					)
+
+					// Paint your Lazy Line, that easy!
+					$('#demo').lazylinepainter('paint');
+				})
+
+
+			})( jQuery );
+
+		</script> -->
+
+
+<script type="text/javascript">
+function showHide(shID) {
+	if (document.getElementById(shID)) {
+		if (document.getElementById(shID+'-show').style.display != 'none') {
+			document.getElementById(shID+'-show').style.display = 'none';
+			document.getElementById(shID).style.display = 'block';
+		}
+		else {
+			document.getElementById(shID+'-show').style.display = 'inline';
+			document.getElementById(shID).style.display = 'none';
+		}
+	}
+}
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+</script>
+
 </head>
+
 
 <body>
 
-  <div class="container"><!--Start Container-->
-    <div class="two columns logo">
-      <div class="home-logo-wrapper">
-        <div class="home-logo-picture">
-          <div class="home-logo-hook"></div>
-          <div class="home-logo-string"></div>
-          <div class="home-logo-frame">
-            <div class="home-logo-inside"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<a id="home"></a>
 
-    <div class="ten columns nav">
-      <ul>
-        <li class="links"><a href="index.html">Home</a></li>
-        <li class="links"><a href="about.html">About</a></li>
-        <li class="links"><a href="projects.html">Projects</a></li>
-        <li class="links"><a href="blog/blog.html">Personal Development</a></li>
-        <li class="links"><a href="blog/blogtech.html">Learning Code</a></li>
-        <li class="links"><a href="contact.html">Contact</a></li>
-      </ul>
+<header class="nav-down">
+	<div class="navWrapper">
+	  <div class="navbar1">
+    	<ul id="top-menu">
+  			<li class="active">
+    			<a href="#home">HOME</a>
+  			</li>
+  			<li>
+    			<a href="#about">ABOUT</a>
+  			</li>
+  			<li>
+    			<a href="#work">PROJECTS</a>
+  			</li>
+  			<li>
+    			<a href="#contact">CONTACT</a>
+  			</li>
+		  </ul>
+	  </div>
+	<div class="navbar2">
+		<div class="accordionButton">MENU</div>
+		<div class="accordionContent">
+			<a href="#home">HOME</a><br>
+			<div class="divLine"></div>
+			<a href="#about">ABOUT</a><br>
+			<div class="divLine"></div>
+			<a href="#work">PROJECTS</a><br>
+			<div class="divLine"></div>
+			<a href="#contact">CONTACT</a><br>
+		</div>
+	</div>
+    <div class="socialMedia">
+      <a href="https://twitter.com/wellygirl" target="_blank"><div class="twitterIcon"></div></a>
+      <a href="https://www.facebook.com/dogsofpetone/" target="_blank"><div class="facebookIcon"></div></a>
+      <a href="https://www.linkedin.com/in/janietito/" target="_blank"><div class="linkedinIcon"></div></a>
+      <a href="https://github.com/janie-t" target="_blank"><div class="githubIcon"></div></a>
     </div>
+  </div>
+</header>
 
-    <div class="row">
-      <div class="twelve columns">
-        <img class="headerImage" src="images/headerImage.jpg" alt="beach view" />
-      </div>
+<div class="bannerBkg">
+	<div class="bannerWrapper">
+    <div class="bannerText">He kai kei aku ringa<br>
+    	<div class="bannerTextSmall">I am capable of anything I set my mind to.</div>
+		</div>
+    <div id="bannerRight">
+      <div id="demo" style="margin-top:3px; margin-left:3px;"></div>
     </div>
+    <div class="space"></div>
+  </div>
+</div>
 
-    <div class="row">
-      <div class="twelve columns welcome">
-        <h1>Janie Tito</h1>
-        <h1>Digital Kete</h1>
-      </div>
+<div class="tagline">
+	<div class="taglineWrapper">
+    	Kia Ora. Ko Janie taku ingoa. I code <strong>javascript webapps </strong> &amp; <strong>websites.</strong>  I became a developer for the love of learning and helping people through technology.
     </div>
+</div>
 
-  </div><!--end of container-->
+<a id="about"></a>
+<div class="aboutPic">
+  <div class="aboutText">
+  	<h1>Ko Wai Au?</h1><br/>
+  	I have been teaching Digital Technology in Secondary Schools for 15 years. That is where my love of coding began. I had a 'light-bulb' moment one day, where I realised I wanted to be learning again too. I quit teaching in 2016 to do the Enspiral Dev Academy course in Wellington. This gave me the confidence and tools to begin my web development journey. After graduating I started a software development company with two other grads, called 'Manu'. This year has been the best year of my life; I have immersed myself in javascript and learned so much about the web. Every day I feel like a kid in a sandpit - playing with toys and building fun stuff.
+  </div>
+  <div class="space"></div>
+</div>
+
+<a id="work"></a>
+<div class="workWrapper">
+  <h1>Projects</h1><br/>
+  <div class="workGroup1">
+    <a class='inline' href="#inline_content1">
+    	<div class="yellowBox">
+        <img src="images/jrichardhill.png" alt="J Richard Hill" class="grow"/><br>
+        J. RICHARD HILL<br>
+        <div class="boxesInfo" style="color:#d76713">Web Design / Development</div>
+    	</div>
+    </a>
+    <a class='inline' href="#inline_content2">
+    	<div class="ltGreenBox">
+        	<img src="images/briabby.png" alt="Briabby" class="grow"/><br>
+            BRIABBY<br>
+            <div class="boxesInfo" style="color:#535C4F;">Web Design / Development / Newsletter / Social Media</div>
+    	</div>
+    </a>
+    <a class='inline' href="#inline_content3">
+    	<div class="ltOrangeBox">
+        	<img src="images/houseofchildren.png" alt="House of Children" class="grow"/><br>
+            HOUSE OF CHILDREN<br>
+            <div class="boxesInfo" style="color:#fbd474">Web Design / Responsive Development</div>
+    	</div>
+    </a>
+    <a class='inline' href="#inline_content4">
+    	<div class="dkOrangeBox">
+        	<img src="images/onegreenville.png" alt="One Greenville" class="grow"/><br>
+            ONE GREENVILLE<br>
+            <div class="boxesInfo" style="color:#e28100;">Web Design / Development</div>
+    	</div>
+    </a>
+  </div>
+</div>
+
+<div class="space"></div>
+
+<a id="contact"></a>
+<div class="contactBkg">
+	<div class="contactWrapper">
+    <h1>get in touch</h1>
+    I am currently available for work. Send me an email or via social media, and let's see how we could work together.<br><br>
+    <div class="submitBtnBkg">
+		  <a href="mailto:jtito@hotmail.com"><div class="submitBtnNew">SEND AN EMAIL</div></a>
+		</div>
+  </div>
+</div>
+
+<script>
+// Cache selectors
+var lastId,
+    topMenu = $("#top-menu"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({
+      scrollTop: offsetTop
+  }, 900);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }
+});
+</script>
 
 </body>
 </html>
